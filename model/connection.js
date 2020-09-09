@@ -7,6 +7,7 @@ var connection = mysql.createConnection({
 })
 
 connection.connect();
+console.log("Connected to DB");
 module.exports = connection;
 
 //in case of error "Client does not support authentication protocol requested by server; consider upgrading MySQL client'," use this command
